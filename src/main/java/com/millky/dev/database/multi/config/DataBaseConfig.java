@@ -62,7 +62,7 @@ public class DataBaseConfig {
 	@Bean(name = "entityManagerFactoryUser")
 	public LocalContainerEntityManagerFactoryBean userEntityManagerFactory(EntityManagerFactoryBuilder builder) {
 
-		return builder.dataSource(articleDataSource())
+		return builder.dataSource(userDataSource())
 				.packages("com.millky.dev.database.multi.domain.user")
 				.build();
 	}
@@ -74,8 +74,10 @@ public class DataBaseConfig {
 	}
 	
 	@Configuration
-	@EnableJpaRepositories(basePackages="com.millky.dev.database.multi.infra.user",
-			entityManagerFactoryRef = "entityManagerFactoryUser", transactionManagerRef = "transactionManagerUser")
+	@EnableJpaRepositories(
+			basePackages="com.millky.dev.database.multi.infra.user",
+			entityManagerFactoryRef = "entityManagerFactoryUser",
+			transactionManagerRef = "transactionManagerUser")
 	static class DbTwoJpaRepositoriesConfig {
 	}
 }

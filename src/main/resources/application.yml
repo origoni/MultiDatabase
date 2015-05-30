@@ -7,5 +7,7 @@ spring:
 datasource:
     article:
         url: jdbc:h2:mem:article
+        username: sa
     user:
         url: jdbc:h2:mem:user
+        username: sa
