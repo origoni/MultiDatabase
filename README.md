@@ -11,6 +11,6 @@ Very Simple Multiple DataBase
 
 ## Check DB
 - http://localhost:8080/console
--- JDBC URL: jdbc:h2:mem:article
--- JDBC URL: jdbc:h2:mem:user
---- Other option is the default.
+ - JDBC URL: jdbc:h2:mem:article
+ - JDBC URL: jdbc:h2:mem:user
+- Other option is the default.
