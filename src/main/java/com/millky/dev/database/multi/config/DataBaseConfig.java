@@ -49,7 +49,7 @@ public class DataBaseConfig {
 	@Configuration
 	@EnableJpaRepositories(basePackages="com.millky.dev.database.multi.infra.article",
 			entityManagerFactoryRef = "entityManagerFactory", transactionManagerRef = "transactionManager")
-	static class DbOnepaRepositoriesConfig {
+	static class DbArticleJpaRepositoriesConfig {
 	}
 
 	
@@ -78,6 +78,6 @@ public class DataBaseConfig {
 			basePackages="com.millky.dev.database.multi.infra.user",
 			entityManagerFactoryRef = "entityManagerFactoryUser",
 			transactionManagerRef = "transactionManagerUser")
-	static class DbTwoJpaRepositoriesConfig {
+	static class DbUserJpaRepositoriesConfig {
 	}
 }
