@@ -1,0 +1,11 @@
+spring:
+    jpa:
+        database: H2
+        generate-ddl: true
+        show-sql: true
+
+datasource:
+    article:
+        url: jdbc:h2:mem:article
+    user:
+        url: jdbc:h2:mem:user
