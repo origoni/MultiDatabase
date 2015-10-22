@@ -10,7 +10,7 @@ Very Simple Multiple DataBase
 - http://localhost:8080/listNote
 
 ## Check DB
-- http://localhost:8080/console
+- http://localhost:8080/h2-console
  - JDBC URL: jdbc:h2:mem:article
  - JDBC URL: jdbc:h2:mem:user
 - Other option is the default.
