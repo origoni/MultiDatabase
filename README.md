@@ -3,6 +3,19 @@ SpringBoot + Spring Data JPA + Multi DB Test
 
 Very Simple Multiple DataBase
 
+## Quick Start
+- JDK 1.8 or later
+- Maven 3.0+
+
+```
+git clone https://github.com/origoni/Spring-Blog
+cd Spring-Blog
+mvn spring-boot:run
+```
+
+- visit [http://localhost:8080/](http://localhost:8080/)
+
+
 ## Test Data
 - http://localhost:8080/addUser?name=origoni
 - http://localhost:8080/listUser
@@ -14,3 +27,4 @@ Very Simple Multiple DataBase
  - JDBC URL: jdbc:h2:mem:article
  - JDBC URL: jdbc:h2:mem:user
 - Other option is the default.
+
