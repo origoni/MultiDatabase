@@ -1,17 +1,17 @@
-package com.millky.dev.database.multi.domain.user;
+package com.millky.dev.database.multi.domain.article;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class User {
+public class Comment {
 
 	@Id
 	@GeneratedValue
 	int id;
 
-	String name;
+	String comment;
 
 	public int getId() {
 		return id;
@@ -21,11 +21,11 @@ public class User {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getComment() {
+		return comment;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setComment(String comment) {
+		this.comment = comment;
 	}
 }
