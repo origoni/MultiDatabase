@@ -8,8 +8,8 @@ Very Simple Multiple DataBase
 - Maven 3.0+
 
 ```
-git clone https://github.com/origoni/Spring-Blog
-cd Spring-Blog
+git clone https://github.com/origoni/MultiDatabase.git
+cd MultiDatabase/
 mvn spring-boot:run
 ```
 
