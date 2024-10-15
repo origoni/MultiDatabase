@@ -3,7 +3,9 @@ package com.millky.dev.database.multi.domain.user;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+@Table(name = "users")
 @Entity
 public class User {
 
