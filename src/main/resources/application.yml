@@ -11,9 +11,11 @@ datasource:
     article:
         url: jdbc:h2:mem:article
         username: sa
+        driverClassName: org.h2.Driver
     user:
         url: jdbc:h2:mem:user
         username: sa
+        driverClassName: org.h2.Driver
 
 ## Default
 #spring:
