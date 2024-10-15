@@ -3,16 +3,18 @@ spring:
         database: H2
         generate-ddl: true
         show-sql: true
+        hibernate:
+            ddl-auto: create-drop
     h2:
         console:
             enabled: true
 
 datasource:
     article:
-        url: jdbc:h2:mem:article
+        jdbc-url: jdbc:h2:mem:article
         username: sa
     user:
-        url: jdbc:h2:mem:user
+        jdbc-url: jdbc:h2:mem:user
         username: sa
 
 ## Default
